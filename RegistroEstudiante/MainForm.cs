@@ -34,5 +34,13 @@ namespace RegistroEstudiante
             cInscripcionesForm cInscripciones = new cInscripcionesForm();
             cInscripciones.Show();
         }
+
+       
+
+        private void registroToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            PagosForm pagos = new PagosForm();
+            pagos.Show();
+        }
     }
 }
