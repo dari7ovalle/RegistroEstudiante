@@ -45,7 +45,7 @@ namespace RegistroEstudiante
                 becas.EstudianteId = int.Parse(IdEstudiantesnumericUpDownP.Value.ToString());
                
                 becas.Fecha = FechaTimePickerP.Text;
-                becas.Monto = montoText;
+                becas.Monto = montoText;   
                 becas.MontoaAsignatura = montoText;
                 becas.PctBeca = PctBecasText;
                 becas.Observaciones = ObservacionestextBoxP.Text;
