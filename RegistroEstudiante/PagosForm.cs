@@ -56,7 +56,7 @@ namespace RegistroEstudiante
 
         private void BuscarEbuttonP_Click(object sender, EventArgs e)
         {
-            int Id = 0;
+             int Id = 0;
             Id = Decimal.ToInt32(IdEstudiantesnumericUpDownP.Value);
             Estudiantes estudiantes = EstudianteBLL.Buscar(Id);
             if (estudiantes == null)
@@ -146,6 +146,86 @@ namespace RegistroEstudiante
             {
                 MessageBox.Show("No se pudo eliminar el pago");
             }
+        }
+
+        private void IDnumericUpDownP_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PagosForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MontotextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ObservacionestextBoxP_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BalancetextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PagotextBoxP_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Nombrelabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void IdEstudiantesnumericUpDownP_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FechaTimePickerP_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

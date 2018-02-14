@@ -42,5 +42,11 @@ namespace RegistroEstudiante
             PagosForm pagos = new PagosForm();
             pagos.Show();
         }
+
+        private void registroToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            rBecas becas = new rBecas();
+            becas.Show();
+        }
     }
 }

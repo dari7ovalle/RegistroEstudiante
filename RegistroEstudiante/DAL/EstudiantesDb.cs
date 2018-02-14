@@ -16,6 +16,7 @@ namespace RegistroEstudiante.DAL
     class EstudiantesDb : DbContext
     {
         public DbSet<Estudiantes> Estudiante { get; set; }
+        public DbSet<Becas> Becas { get; set; }
 
         public EstudiantesDb() : base("ConStr")
         {

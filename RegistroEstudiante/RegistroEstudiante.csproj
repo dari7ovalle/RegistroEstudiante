@@ -66,6 +66,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="rBecas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rBecas.Designer.cs">
+      <DependentUpon>rBecas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BLL\BecasBLL.cs" />
     <Compile Include="BLL\EstudianteBLL.cs" />
     <Compile Include="BLL\InscripcionesBLL.cs" />
     <Compile Include="BLL\PagosBLL.cs" />
@@ -80,6 +87,7 @@
     <Compile Include="DAL\InscripcionesDb.cs" />
     <Compile Include="DAL\PagosDb.cs" />
     <Compile Include="DAL\TipoTelefonosDb.cs" />
+    <Compile Include="Entidades\Becas.cs" />
     <Compile Include="Entidades\Estudiantes.cs" />
     <Compile Include="Entidades\Form1.cs">
       <SubType>Form</SubType>
@@ -116,6 +124,9 @@
     <Compile Include="rInscripcionesForm.Designer.cs">
       <DependentUpon>rInscripcionesForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="rBecas.resx">
+      <DependentUpon>rBecas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="cInscripcionesForm.resx">
       <DependentUpon>cInscripcionesForm.cs</DependentUpon>
     </EmbeddedResource>
