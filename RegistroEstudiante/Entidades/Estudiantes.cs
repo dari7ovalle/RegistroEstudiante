@@ -17,6 +17,7 @@ namespace RegistroEstudiante.Entidades {
         public int Edad { get; set; }
         public string Matricula { get; set; }
         public string Direccion { get; set; }
+        public double MontoEstudiante { get; set; }
 
 
         public Estudiantes()
@@ -28,9 +29,10 @@ namespace RegistroEstudiante.Entidades {
             this.Matricula = String.Empty;
             this.Edad = 0;
             this.Direccion = String.Empty;
+            this.MontoEstudiante = 0;
         }
 
-        public Estudiantes(int EstudianteId, string Nombres, string Apellidos, string NombreCarrera, string Matricula, int Edad, string Direccion)
+        public Estudiantes(int EstudianteId, string Nombres, string Apellidos, string NombreCarrera, string Matricula, int Edad, string Direccion, double MontoEstudiante)
         {
             this.EstudianteId = EstudianteId;
             this.Apellidos = Apellidos;
@@ -38,6 +40,7 @@ namespace RegistroEstudiante.Entidades {
             this.Matricula = Matricula;
             this.Edad = Edad;
             this.Direccion = Direccion;
+            this.MontoEstudiante = MontoEstudiante;
         }
 
     }

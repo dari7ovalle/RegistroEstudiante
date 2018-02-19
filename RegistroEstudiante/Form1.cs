@@ -55,6 +55,7 @@ namespace RegistroEstudiante
                 CarreratextBox.Text = estudiantes.NombreCarrera;
                 EdadtextBox.Text = estudiantes.Edad.ToString();//convertir de entero a string
                 DirecciontextBox.Text = estudiantes.Direccion;
+                MontoEstudiantetextBox.Text = estudiantes.MontoEstudiante.ToString();
 
             }
         }
@@ -74,7 +75,7 @@ namespace RegistroEstudiante
             int.TryParse(EdadtextBox.Text, out edad);
             estudiantes.Edad = edad;
             estudiantes.Direccion = DirecciontextBox.Text;
-
+            estudiantes.MontoEstudiante = double.Parse(MontoEstudiantetextBox.Text);
             db.Estudiante.Add(estudiantes);
             db.SaveChanges();
             LimpiarTextBox();
@@ -102,6 +103,7 @@ namespace RegistroEstudiante
             estudiante.NombreCarrera = CarreratextBox.Text;
             estudiante.Matricula = MatriculatextBox.Text;
             estudiante.Direccion = DirecciontextBox.Text;
+            estudiante.MontoEstudiante = double.Parse(MontoEstudiantetextBox.Text);
 
             db.Entry(estudiante).State = EntityState.Modified;
             db.SaveChanges();

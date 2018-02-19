@@ -12,6 +12,27 @@ namespace RegistroEstudiante.BLL
   public   class EstudianteBLL
     {
 
+        public static bool ActualizarMonto(int Id, double nuevoMonto)
+        {
+            Estudiantes estudiantes;
+            
+            bool estado = false;
+            try
+            {
+                EstudiantesDb context = new EstudiantesDb();
+                estudiantes = context.Estudiante.Find(Id);
+                estudiantes.MontoEstudiante += nuevoMonto;
+                context.Entry(estudiantes).State = EntityState.Modified;
+                context.SaveChanges();
+                estado = true;
+            }
+            catch (Exception)
+            {
+                estado = false;
+            }
+            return estado;
+        }
+
         public static bool Guardar(Estudiantes estudiantes)
         {
             bool estado = false;

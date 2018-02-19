@@ -49,7 +49,14 @@ namespace RegistroEstudiante
                 becas.MontoaAsignatura = montoText;
                 becas.PctBeca = PctBecasText;
                 becas.Observaciones = ObservacionestextBoxP.Text;
-
+                if (EstudianteBLL.ActualizarMonto(becas.EstudianteId,becas.Monto))
+                {
+                    MessageBox.Show("Monto Actualizado","Correcto",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Error al Actualizar el monto", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
             else
             {

@@ -46,11 +46,13 @@
             this.EdadtextBox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.DirecciontextBox = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.MontoEstudiantetextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // Buscarbutton
             // 
-            this.Buscarbutton.Location = new System.Drawing.Point(341, 138);
+            this.Buscarbutton.Location = new System.Drawing.Point(344, 91);
             this.Buscarbutton.Margin = new System.Windows.Forms.Padding(2);
             this.Buscarbutton.Name = "Buscarbutton";
             this.Buscarbutton.Size = new System.Drawing.Size(56, 19);
@@ -95,7 +97,7 @@
             // Nombreslabel
             // 
             this.Nombreslabel.AutoSize = true;
-            this.Nombreslabel.Location = new System.Drawing.Point(203, 182);
+            this.Nombreslabel.Location = new System.Drawing.Point(206, 135);
             this.Nombreslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Nombreslabel.Name = "Nombreslabel";
             this.Nombreslabel.Size = new System.Drawing.Size(49, 13);
@@ -105,7 +107,7 @@
             // EstudiantesIdLabel
             // 
             this.EstudiantesIdLabel.AutoSize = true;
-            this.EstudiantesIdLabel.Location = new System.Drawing.Point(187, 141);
+            this.EstudiantesIdLabel.Location = new System.Drawing.Point(190, 94);
             this.EstudiantesIdLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.EstudiantesIdLabel.Name = "EstudiantesIdLabel";
             this.EstudiantesIdLabel.Size = new System.Drawing.Size(71, 13);
@@ -114,7 +116,7 @@
             // 
             // NombrestextBox
             // 
-            this.NombrestextBox.Location = new System.Drawing.Point(262, 179);
+            this.NombrestextBox.Location = new System.Drawing.Point(265, 132);
             this.NombrestextBox.Margin = new System.Windows.Forms.Padding(2);
             this.NombrestextBox.Name = "NombrestextBox";
             this.NombrestextBox.Size = new System.Drawing.Size(222, 20);
@@ -122,7 +124,7 @@
             // 
             // EstudiantesIdtextBox
             // 
-            this.EstudiantesIdtextBox.Location = new System.Drawing.Point(262, 138);
+            this.EstudiantesIdtextBox.Location = new System.Drawing.Point(265, 91);
             this.EstudiantesIdtextBox.Margin = new System.Windows.Forms.Padding(2);
             this.EstudiantesIdtextBox.Name = "EstudiantesIdtextBox";
             this.EstudiantesIdtextBox.Size = new System.Drawing.Size(76, 20);
@@ -131,7 +133,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(203, 244);
+            this.label1.Location = new System.Drawing.Point(206, 197);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(41, 13);
@@ -140,7 +142,7 @@
             // 
             // CarreratextBox
             // 
-            this.CarreratextBox.Location = new System.Drawing.Point(262, 241);
+            this.CarreratextBox.Location = new System.Drawing.Point(265, 194);
             this.CarreratextBox.Margin = new System.Windows.Forms.Padding(2);
             this.CarreratextBox.Name = "CarreratextBox";
             this.CarreratextBox.Size = new System.Drawing.Size(222, 20);
@@ -149,7 +151,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(203, 220);
+            this.label2.Location = new System.Drawing.Point(206, 173);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(49, 13);
@@ -158,7 +160,7 @@
             // 
             // ApellidostextBox
             // 
-            this.ApellidostextBox.Location = new System.Drawing.Point(262, 213);
+            this.ApellidostextBox.Location = new System.Drawing.Point(265, 166);
             this.ApellidostextBox.Margin = new System.Windows.Forms.Padding(2);
             this.ApellidostextBox.Name = "ApellidostextBox";
             this.ApellidostextBox.Size = new System.Drawing.Size(222, 20);
@@ -167,7 +169,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(203, 274);
+            this.label3.Location = new System.Drawing.Point(206, 227);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(50, 13);
@@ -176,7 +178,7 @@
             // 
             // MatriculatextBox
             // 
-            this.MatriculatextBox.Location = new System.Drawing.Point(262, 271);
+            this.MatriculatextBox.Location = new System.Drawing.Point(265, 224);
             this.MatriculatextBox.Margin = new System.Windows.Forms.Padding(2);
             this.MatriculatextBox.Name = "MatriculatextBox";
             this.MatriculatextBox.Size = new System.Drawing.Size(222, 20);
@@ -185,7 +187,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(203, 300);
+            this.label4.Location = new System.Drawing.Point(206, 253);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(32, 13);
@@ -194,7 +196,7 @@
             // 
             // EdadtextBox
             // 
-            this.EdadtextBox.Location = new System.Drawing.Point(262, 297);
+            this.EdadtextBox.Location = new System.Drawing.Point(265, 250);
             this.EdadtextBox.Margin = new System.Windows.Forms.Padding(2);
             this.EdadtextBox.Name = "EdadtextBox";
             this.EdadtextBox.Size = new System.Drawing.Size(222, 20);
@@ -203,7 +205,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(203, 328);
+            this.label5.Location = new System.Drawing.Point(206, 281);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(52, 13);
@@ -212,17 +214,36 @@
             // 
             // DirecciontextBox
             // 
-            this.DirecciontextBox.Location = new System.Drawing.Point(262, 325);
+            this.DirecciontextBox.Location = new System.Drawing.Point(265, 278);
             this.DirecciontextBox.Margin = new System.Windows.Forms.Padding(2);
             this.DirecciontextBox.Name = "DirecciontextBox";
             this.DirecciontextBox.Size = new System.Drawing.Size(222, 20);
             this.DirecciontextBox.TabIndex = 23;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(174, 323);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(87, 13);
+            this.label6.TabIndex = 25;
+            this.label6.Text = "MontoEstudiante";
+            // 
+            // MontoEstudiantetextBox
+            // 
+            this.MontoEstudiantetextBox.Location = new System.Drawing.Point(265, 320);
+            this.MontoEstudiantetextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.MontoEstudiantetextBox.Name = "MontoEstudiantetextBox";
+            this.MontoEstudiantetextBox.Size = new System.Drawing.Size(222, 20);
+            this.MontoEstudiantetextBox.TabIndex = 26;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(686, 411);
+            this.Controls.Add(this.MontoEstudiantetextBox);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.DirecciontextBox);
             this.Controls.Add(this.label4);
@@ -269,6 +290,8 @@
         private System.Windows.Forms.TextBox EdadtextBox;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox DirecciontextBox;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox MontoEstudiantetextBox;
     }
 }
 
