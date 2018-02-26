@@ -26,8 +26,8 @@ namespace RegistroEstudiante.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\Database\\Estu" +
-            "diantesDb.mdf;Integrated Security=True;Connect Timeout=30")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DARY-PC\\SQLEXPRESS;Initial Catalog=EstudianteDb;User ID=sa;Password=d" +
+            "ari303030")]
         public string ConStr {
             get {
                 return ((string)(this["ConStr"]));

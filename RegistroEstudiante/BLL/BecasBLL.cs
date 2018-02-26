@@ -20,6 +20,7 @@ namespace RegistroEstudiante.BLL
                 EstudiantesDb context = new EstudiantesDb();
                 context.Becas.Add(becas);
                 context.SaveChanges();
+                EstudianteBLL.ActualizarMonto(becas.EstudianteId, becas.Monto);
                 estado = true;
 
             }

@@ -70,14 +70,14 @@
             // registroToolStripMenuItem1
             // 
             this.registroToolStripMenuItem1.Name = "registroToolStripMenuItem1";
-            this.registroToolStripMenuItem1.Size = new System.Drawing.Size(121, 22);
+            this.registroToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.registroToolStripMenuItem1.Text = "Registro";
             this.registroToolStripMenuItem1.Click += new System.EventHandler(this.registroToolStripMenuItem1_Click);
             // 
             // consultaToolStripMenuItem1
             // 
             this.consultaToolStripMenuItem1.Name = "consultaToolStripMenuItem1";
-            this.consultaToolStripMenuItem1.Size = new System.Drawing.Size(121, 22);
+            this.consultaToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.consultaToolStripMenuItem1.Text = "Consulta";
             // 
             // inscripcionesToolStripMenuItem
@@ -143,7 +143,7 @@
             // registroToolStripMenuItem3
             // 
             this.registroToolStripMenuItem3.Name = "registroToolStripMenuItem3";
-            this.registroToolStripMenuItem3.Size = new System.Drawing.Size(152, 22);
+            this.registroToolStripMenuItem3.Size = new System.Drawing.Size(117, 22);
             this.registroToolStripMenuItem3.Text = "Registro";
             this.registroToolStripMenuItem3.Click += new System.EventHandler(this.registroToolStripMenuItem3_Click);
             // 
@@ -153,6 +153,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(533, 319);
             this.Controls.Add(this.menuStrip1);
+            this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForm";
             this.Text = "MainForm";

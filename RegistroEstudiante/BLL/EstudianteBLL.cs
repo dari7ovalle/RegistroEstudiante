@@ -2,6 +2,7 @@
 using RegistroEstudiante.Entidades;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.Entity;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,17 @@ namespace RegistroEstudiante.BLL
   public   class EstudianteBLL
     {
 
+        /*
+        public static DataSet GetDatoReporte ()
+        {
+
+            DataSet dataSet = new DataSet();
+            EstudiantesDb context = new EstudiantesDb();
+            string sql = "select * from todosEstudiantes";
+                    context.Database.Sq(sql);
+            dataSet = (from e in context.Estudiante select e).Cast<DataSet>();
+
+        }*/
         public static bool ActualizarMonto(int Id, double nuevoMonto)
         {
             Estudiantes estudiantes;

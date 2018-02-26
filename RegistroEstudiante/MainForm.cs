@@ -20,18 +20,21 @@ namespace RegistroEstudiante
         private void registroToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             Form1 formEstudiantes = new Form1();
+            formEstudiantes.MdiParent = this;
             formEstudiantes.Show();
         }
 
         private void registroToolStripMenuItem_Click(object sender, EventArgs e)
         {
             rInscripcionesForm inscripciones = new rInscripcionesForm();
+            inscripciones.MdiParent = this;
             inscripciones.Show();
         }
 
         private void consultaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             cInscripcionesForm cInscripciones = new cInscripcionesForm();
+            cInscripciones.MdiParent = this;
             cInscripciones.Show();
         }
 
@@ -40,12 +43,14 @@ namespace RegistroEstudiante
         private void registroToolStripMenuItem2_Click(object sender, EventArgs e)
         {
             PagosForm pagos = new PagosForm();
+            pagos.MdiParent = this;
             pagos.Show();
         }
 
         private void registroToolStripMenuItem3_Click(object sender, EventArgs e)
         {
             rBecas becas = new rBecas();
+            becas.MdiParent = this;
             becas.Show();
         }
     }

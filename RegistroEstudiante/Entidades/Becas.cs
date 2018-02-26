@@ -13,9 +13,9 @@ namespace RegistroEstudiante.Entidades
         public int NotaId { get; set; }
         public string Fecha { get; set; }
         public string Observaciones { get; set; }
-        public int MontoaAsignatura { get; set; }
-        public  int PctBeca { get; set; }
-        public int Monto { get; set; }
+        public double MontoaAsignatura { get; set; }
+        public  double PctBeca { get; set; }
+        public double Monto { get; set; }
         public int EstudianteId { get; set; }
 
         public Becas()
@@ -29,7 +29,7 @@ namespace RegistroEstudiante.Entidades
             this.EstudianteId = 0;
         }
 
-        public Becas( int NotaId, string Fecha, string Observaciones, int MontoAsinacion , int PctBeca , int Monto,int EstudianteId )
+        public Becas( int NotaId, string Fecha, string Observaciones, double MontoAsinacion , double PctBeca , double Monto,int EstudianteId )
         {
 
             this.NotaId = NotaId;

@@ -47,13 +47,15 @@
             this.label4 = new System.Windows.Forms.Label();
             this.porcientotextBox = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.MontoAsignaturatextBox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.IdEstudiantesnumericUpDownP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NotaIdUpDownP)).BeginInit();
             this.SuspendLayout();
             // 
             // ObservacionestextBoxP
             // 
-            this.ObservacionestextBoxP.Location = new System.Drawing.Point(118, 330);
+            this.ObservacionestextBoxP.Location = new System.Drawing.Point(118, 348);
             this.ObservacionestextBoxP.Multiline = true;
             this.ObservacionestextBoxP.Name = "ObservacionestextBoxP";
             this.ObservacionestextBoxP.Size = new System.Drawing.Size(232, 60);
@@ -62,7 +64,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(21, 352);
+            this.label6.Location = new System.Drawing.Point(21, 348);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(78, 13);
             this.label6.TabIndex = 58;
@@ -100,15 +102,16 @@
             // 
             // MontotextBox
             // 
-            this.MontotextBox.Location = new System.Drawing.Point(118, 183);
+            this.MontotextBox.Location = new System.Drawing.Point(118, 299);
             this.MontotextBox.Name = "MontotextBox";
             this.MontotextBox.Size = new System.Drawing.Size(232, 20);
             this.MontotextBox.TabIndex = 53;
+            this.MontotextBox.TextChanged += new System.EventHandler(this.MontotextBox_TextChanged);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(21, 186);
+            this.label5.Location = new System.Drawing.Point(21, 303);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(37, 13);
             this.label5.TabIndex = 52;
@@ -143,7 +146,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(21, 145);
+            this.label3.Location = new System.Drawing.Point(21, 147);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(68, 13);
             this.label3.TabIndex = 47;
@@ -152,7 +155,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(21, 97);
+            this.label2.Location = new System.Drawing.Point(21, 101);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(37, 13);
             this.label2.TabIndex = 46;
@@ -193,7 +196,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(21, 288);
+            this.label4.Location = new System.Drawing.Point(21, 254);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(53, 13);
             this.label4.TabIndex = 62;
@@ -201,10 +204,11 @@
             // 
             // porcientotextBox
             // 
-            this.porcientotextBox.Location = new System.Drawing.Point(118, 288);
+            this.porcientotextBox.Location = new System.Drawing.Point(118, 250);
             this.porcientotextBox.Name = "porcientotextBox";
-            this.porcientotextBox.Size = new System.Drawing.Size(163, 20);
+            this.porcientotextBox.Size = new System.Drawing.Size(232, 20);
             this.porcientotextBox.TabIndex = 63;
+            this.porcientotextBox.TextChanged += new System.EventHandler(this.porcientotextBox_TextChanged);
             // 
             // label7
             // 
@@ -215,11 +219,30 @@
             this.label7.TabIndex = 64;
             this.label7.Text = "NotaId";
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(21, 205);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(93, 13);
+            this.label8.TabIndex = 65;
+            this.label8.Text = "Monto  Asignatura";
+            // 
+            // MontoAsignaturatextBox
+            // 
+            this.MontoAsignaturatextBox.Location = new System.Drawing.Point(118, 201);
+            this.MontoAsignaturatextBox.Name = "MontoAsignaturatextBox";
+            this.MontoAsignaturatextBox.Size = new System.Drawing.Size(232, 20);
+            this.MontoAsignaturatextBox.TabIndex = 66;
+            this.MontoAsignaturatextBox.TextChanged += new System.EventHandler(this.MontoAsignaturatextBox_TextChanged);
+            // 
             // rBecas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(405, 511);
+            this.Controls.Add(this.MontoAsignaturatextBox);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.porcientotextBox);
             this.Controls.Add(this.label4);
@@ -268,5 +291,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox porcientotextBox;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox MontoAsignaturatextBox;
     }
 }

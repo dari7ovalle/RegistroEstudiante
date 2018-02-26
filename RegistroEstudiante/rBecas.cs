@@ -36,10 +36,16 @@ namespace RegistroEstudiante
         }
 
         private Becas LlenaClase()
-        {
+         {
+
+
             Becas becas = new Becas();
-            int PctBecasText = int.Parse(porcientotextBox.Text);
-            int montoText = int.Parse(MontotextBox.Text);
+
+            double PctBecasText;
+            double.TryParse(porcientotextBox.Text, out PctBecasText);
+
+            double montoText;
+            double.TryParse(MontotextBox.Text,out montoText);
             if (PctBecasText <= montoText)
             {
                 becas.EstudianteId = int.Parse(IdEstudiantesnumericUpDownP.Value.ToString());
@@ -49,14 +55,14 @@ namespace RegistroEstudiante
                 becas.MontoaAsignatura = montoText;
                 becas.PctBeca = PctBecasText;
                 becas.Observaciones = ObservacionestextBoxP.Text;
-                if (EstudianteBLL.ActualizarMonto(becas.EstudianteId,becas.Monto))
-                {
-                    MessageBox.Show("Monto Actualizado","Correcto",MessageBoxButtons.OK,MessageBoxIcon.Information);
-                }
-                else
-                {
-                    MessageBox.Show("Error al Actualizar el monto", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                //if (EstudianteBLL.ActualizarMonto(becas.EstudianteId,becas.Monto))
+                //{
+                //    MessageBox.Show("Monto Actualizado","Correcto",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                //}
+                //else
+                //{
+                //    MessageBox.Show("Error al Actualizar el monto", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //}
             }
             else
             {
@@ -134,6 +140,30 @@ namespace RegistroEstudiante
                 MessageBox.Show(" no se pudo eliminar");
             }
 
+        }
+
+        private void MontotextBox_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void MontoAsignaturatextBox_TextChanged(object sender, EventArgs e)
+        {
+            calculo();
+
+        }
+
+        private void porcientotextBox_TextChanged(object sender, EventArgs e)
+        {
+            calculo();
+        }
+        private void calculo()
+        {
+            double monto; 
+                double.TryParse(MontoAsignaturatextBox.Text, out monto);
+            double pct;
+            double.TryParse(porcientotextBox.Text, out pct);
+            MontotextBox.Text = (monto * pct / 100).ToString("N2");
         }
     }
 
