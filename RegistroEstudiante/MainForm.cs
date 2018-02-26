@@ -53,5 +53,11 @@ namespace RegistroEstudiante
             becas.MdiParent = this;
             becas.Show();
         }
+
+        private void estudiantresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Reporte.ReporteEstudiante estudiante = new Reporte.ReporteEstudiante();
+            estudiante.Show();
+        }
     }
 }

@@ -41,6 +41,8 @@
             this.registroToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.becasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registroToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.estudiantresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,7 +53,8 @@
             this.inscripcionesToolStripMenuItem,
             this.tipoTelefonosToolStripMenuItem,
             this.pagosToolStripMenuItem,
-            this.becasToolStripMenuItem});
+            this.becasToolStripMenuItem,
+            this.reportesToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(533, 24);
@@ -70,14 +73,14 @@
             // registroToolStripMenuItem1
             // 
             this.registroToolStripMenuItem1.Name = "registroToolStripMenuItem1";
-            this.registroToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.registroToolStripMenuItem1.Size = new System.Drawing.Size(121, 22);
             this.registroToolStripMenuItem1.Text = "Registro";
             this.registroToolStripMenuItem1.Click += new System.EventHandler(this.registroToolStripMenuItem1_Click);
             // 
             // consultaToolStripMenuItem1
             // 
             this.consultaToolStripMenuItem1.Name = "consultaToolStripMenuItem1";
-            this.consultaToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.consultaToolStripMenuItem1.Size = new System.Drawing.Size(121, 22);
             this.consultaToolStripMenuItem1.Text = "Consulta";
             // 
             // inscripcionesToolStripMenuItem
@@ -147,6 +150,21 @@
             this.registroToolStripMenuItem3.Text = "Registro";
             this.registroToolStripMenuItem3.Click += new System.EventHandler(this.registroToolStripMenuItem3_Click);
             // 
+            // reportesToolStripMenuItem
+            // 
+            this.reportesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.estudiantresToolStripMenuItem});
+            this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
+            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
+            this.reportesToolStripMenuItem.Text = "Reportes";
+            // 
+            // estudiantresToolStripMenuItem
+            // 
+            this.estudiantresToolStripMenuItem.Name = "estudiantresToolStripMenuItem";
+            this.estudiantresToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.estudiantresToolStripMenuItem.Text = "Estudiantres";
+            this.estudiantresToolStripMenuItem.Click += new System.EventHandler(this.estudiantresToolStripMenuItem_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -180,5 +198,7 @@
         private System.Windows.Forms.ToolStripMenuItem registroToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem becasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem registroToolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem reportesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem estudiantresToolStripMenuItem;
     }
 }
