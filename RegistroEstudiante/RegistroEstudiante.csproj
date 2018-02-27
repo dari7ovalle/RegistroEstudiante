@@ -102,10 +102,10 @@
     <Compile Include="DAL\TipoTelefonosDb.cs" />
     <Compile Include="Entidades\Becas.cs" />
     <Compile Include="Entidades\Estudiantes.cs" />
-    <Compile Include="Reporte\MiPrimerReporte.cs">
+    <Compile Include="Reporte\MiSegundoReporte.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>MiPrimerReporte.rpt</DependentUpon>
+      <DependentUpon>MiSegundoReporte.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Reporte\ReporteEstudiante.cs">
@@ -155,9 +155,9 @@
     <EmbeddedResource Include="cInscripcionesForm.resx">
       <DependentUpon>cInscripcionesForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reporte\MiPrimerReporte.rpt">
+    <EmbeddedResource Include="Reporte\MiSegundoReporte.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>MiPrimerReporte.cs</LastGenOutput>
+      <LastGenOutput>MiSegundoReporte.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Reporte\ReporteEstudiante.resx">
       <DependentUpon>ReporteEstudiante.cs</DependentUpon>

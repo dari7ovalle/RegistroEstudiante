@@ -16,14 +16,14 @@ namespace RegistroEstudiante.Reporte {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class MiPrimerReporte : ReportClass {
+    public class MiSegundoReporte : ReportClass {
         
-        public MiPrimerReporte() {
+        public MiSegundoReporte() {
         }
         
         public override string ResourceName {
             get {
-                return "MiPrimerReporte.rpt";
+                return "MiSegundoReporte.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace RegistroEstudiante.Reporte {
         
         public override string FullResourceName {
             get {
-                return "RegistroEstudiante.Reporte.MiPrimerReporte.rpt";
+                return "RegistroEstudiante.Reporte.MiSegundoReporte.rpt";
             }
             set {
                 // Do nothing
@@ -90,9 +90,9 @@ namespace RegistroEstudiante.Reporte {
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedMiPrimerReporte : Component, ICachedReport {
+    public class CachedMiSegundoReporte : Component, ICachedReport {
         
-        public CachedMiPrimerReporte() {
+        public CachedMiSegundoReporte() {
         }
         
         [Browsable(false)]
@@ -129,7 +129,7 @@ namespace RegistroEstudiante.Reporte {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            MiPrimerReporte rpt = new MiPrimerReporte();
+            MiSegundoReporte rpt = new MiSegundoReporte();
             rpt.Site = this.Site;
             return rpt;
         }
