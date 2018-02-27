@@ -29,6 +29,8 @@ namespace RegistroEstudiante.Entidades
                 this.Celular = Celular;
                 this.Telefono = Telefono;
                 this.Descripcion = descripcion;
+
+
             }
         
 
